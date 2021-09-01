@@ -1,5 +1,11 @@
+@import "color";
+@import "fonts";
+@import "mixin";
+@import "header";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $poppins;
 }

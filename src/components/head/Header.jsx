@@ -1,10 +1,10 @@
 import React from "react";
-import { FaShippingFast } from "react-icons/fa";
+import FirstHeader from "./FirstHeader";
 
 function Header() {
   return (
     <div className="header">
-      <FaShippingFast />
+      <FirstHeader />
     </div>
   );
 }
