@@ -1,5 +1,7 @@
 import React from "react";
 import Icon from "./Icon";
+// import UsdDrop from "./UsdDrop";
+import Drop from "./Drop";
 import { FaShippingFast, FaFacebookF, FaTwitter } from "react-icons/fa";
 import { FiHeart, FiInstagram, FiTruck } from "react-icons/fi";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
@@ -53,10 +55,12 @@ function FirstHeader() {
           <div>
             <p>USD</p>
             <IoIosArrowDown />
+            <Drop class="usd-drop" first="USD" second="EUR" />
           </div>
           <div>
             <p>ENG</p>
             <IoIosArrowDown />
+            <Drop class="lng-drop" first="ENG" second="FRH" />
           </div>
         </div>
       </div>
