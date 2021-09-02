@@ -171,6 +171,7 @@
           top: 50%;
           transform: translateY(-50%);
           @include flex(row);
+          z-index: 4;
           height: 40px;
           p {
             color: $darkClr;
