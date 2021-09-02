@@ -5,6 +5,7 @@
 @import "banner";
 @import "owlStage";
 @import "popular";
+@import "mostPopular";
 
 * {
   margin: 0;
@@ -15,6 +16,5 @@
 
 body {
   overflow-x: hidden;
-  min-height: 900px;
   background-color: $lightSilver;
 }

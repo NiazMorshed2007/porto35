@@ -3,6 +3,7 @@ import Header from "./components/head/Header";
 import Banner from "./components/banner/Banner";
 import OwlStage from "./components/OwlStage/OwlStage";
 import Popular from "./components/popular/Popular";
+import MostPopular from "./components/MostPopular/MostPopular";
 import "./style/style.scss";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <OwlStage />
       <Popular />
+      <MostPopular />
     </div>
   );
 }

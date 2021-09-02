@@ -71,7 +71,7 @@
     .first-header-2 {
       @extend .first-header-1;
       width: 35%;
-      n div {
+      div {
         @include flex(row);
         align-items: center;
         gap: 0.3em;

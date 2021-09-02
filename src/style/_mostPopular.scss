@@ -1,0 +1,103 @@
+.most-popular {
+  padding: 25px;
+  h2 {
+    color: $darkClr2;
+    font-size: 22px;
+  }
+  p {
+    font-size: 14px;
+    color: $darkClr;
+    opacity: 0.6;
+  }
+  .box-wrapper {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    padding-top: 28px;
+    border-radius: 7px;
+    .categories {
+      @include flex(row);
+      gap: 1.5em;
+      .category {
+        padding: 7px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 5px;
+        border: 1px solid rgba($color: $darkClr, $alpha: 0.5);
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          border: 2px solid $brandClr;
+          color: $brandClr;
+        }
+      }
+      .active {
+        border: 2px solid $brandClr;
+        color: $brandClr;
+      }
+    }
+    .inner-box-wrapper {
+      padding-top: 25px;
+      @include flex(row);
+      .box {
+        width: 211px;
+        height: 320px;
+        @include flex(column-reverse);
+        .img-box {
+          height: 65%;
+          width: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .txt-box {
+          width: 100%;
+          height: 45%;
+          @include flex(column);
+          .txt-box1 {
+            width: 100%;
+            @include flex(row);
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            padding-bottom: 0px;
+            h6 {
+              font-weight: 200;
+              font-size: 12px;
+              text-transform: uppercase;
+            }
+            svg {
+              font-size: 18px;
+            }
+            .loved {
+              color: $tomato;
+            }
+          }
+          .txt-box2 {
+            padding: 0px 0px 0px 8px;
+            p {
+              font-size: 15px;
+              color: $darkClr2;
+              opacity: 1;
+            }
+            svg {
+              color: $darkClr;
+            }
+          }
+          .txt-box3 {
+            padding: 0px 0px 0px 8px;
+            strike {
+              font-size: 13px;
+            }
+            span {
+              padding-left: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
