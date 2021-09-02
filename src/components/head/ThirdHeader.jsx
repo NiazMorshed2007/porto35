@@ -1,4 +1,5 @@
 import React from "react";
+import { FiChevronDown } from "react-icons/fi";
 
 function ThirdHeader() {
   const Arr = [
@@ -36,6 +37,7 @@ function ThirdHeader() {
           <div></div>
         </div>
         <h4>All Departments</h4>
+        <FiChevronDown />
       </div>
       <div className="third-header2">
         {Arr.map((e, i) => (
