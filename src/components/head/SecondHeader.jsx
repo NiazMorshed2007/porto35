@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import Cart from "./Cart";
 import { BsSearch } from "react-icons/bs";
 import { BiUser, BiShoppingBag } from "react-icons/bi";
+import { FiChevronDown } from "react-icons/fi";
 
 function SecondHeader() {
+  const [open, setOpen] = useState(false);
+  const [currCategory, setCurrCategory] = useState("All Categories");
+  const [CartOpen, setCartOpen] = useState(false);
   const categories = [
     "All Categories",
     "Vegetables",
@@ -22,32 +27,51 @@ function SecondHeader() {
       <div className="second-header2">
         <label>
           <input type="text" placeholder="Search..." />
-          <div className="categories">
-            <p>All Categories</p>
+          <div
+            onClick={() => (open ? setOpen(false) : setOpen(true))}
+            className={open ? "categories open" : "categories"}
+          >
+            <p>{currCategory}</p>
+            <FiChevronDown />
             <div className="inner-categories">
               {categories.map((e, i) => (
-                <p key={i}>{e}</p>
+                <p onClick={() => setCurrCategory(e)} key={i}>
+                  {e}
+                </p>
               ))}
             </div>
           </div>
-          <BsSearch />
+          <div className="search-icon-wrapper">
+            <BsSearch className="search-icon" />
+          </div>
         </label>
       </div>
       <div className="second-header3">
-        <BiUser />
         <div>
           <p>Welcome</p>
           <h4>Sign In / Register</h4>
         </div>
+        <BiUser />
       </div>
-      <div className="second-header4">
+      <div
+        onClick={() => (CartOpen ? setCartOpen(false) : setCartOpen(true))}
+        className="second-header4"
+      >
         <BiShoppingBag className="cart-icon"></BiShoppingBag>
-        <sup>0</sup>
         <div>
+          <sup>0</sup>
           <p>Shopping Cart</p>
           <h4>$0.00</h4>
         </div>
       </div>
+      <Cart
+        fu={(e) =>
+          e.target.className === "modal open"
+            ? setCartOpen(false)
+            : setCartOpen(true)
+        }
+        state={CartOpen}
+      />
     </div>
   );
 }
