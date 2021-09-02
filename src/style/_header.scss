@@ -2,7 +2,6 @@
   width: 100%;
   .first-header {
     height: 45px;
-    background-color: $lightSilver;
     @include flex(row);
     align-items: center;
     font-weight: 300;
@@ -72,7 +71,7 @@
     .first-header-2 {
       @extend .first-header-1;
       width: 35%;
-      div {
+      n div {
         @include flex(row);
         align-items: center;
         gap: 0.3em;
@@ -132,6 +131,7 @@
     align-items: center;
     justify-content: space-around;
     border-bottom: 1px solid silver;
+    background: white;
     padding: 14px;
     .second-header2 {
       width: 54%;
@@ -325,6 +325,7 @@
     align-items: center;
     gap: 0.7em;
     padding-left: 50px;
+    background: white;
     .third-header1 {
       padding: 18px;
       padding-left: 7px;
