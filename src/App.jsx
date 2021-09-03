@@ -5,6 +5,7 @@ import Banner from "./components/banner/Banner";
 import OwlStage from "./components/OwlStage/OwlStage";
 import Popular from "./components/popular/Popular";
 import MostPopular from "./components/MostPopular/MostPopular";
+import WeekSpecial from "./components/weeksSpecial/WeekSpecial";
 import "./style/style.scss";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <OwlStage />
       <Popular />
       <MostPopular />
+      <WeekSpecial />
     </div>
   );
 }

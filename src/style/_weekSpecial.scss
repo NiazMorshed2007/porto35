@@ -1,0 +1,30 @@
+.week-special {
+  padding: 25px;
+  @include headAndDes;
+  position: relative;
+
+  .btn-left {
+    @include btn;
+    left: 0%;
+    transform: translateY(0%);
+    border: 1px solid rgba($color: $darkClr, $alpha: 0.2);
+  }
+  .btn-right {
+    @include btn;
+    right: 0%;
+    transform: translateY(0%);
+    border: 1px solid rgba($color: $darkClr, $alpha: 0.2);
+  }
+  .box-wrapper {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    padding-top: 28px;
+    border-radius: 7px;
+    border: 2px solid rgba($color: $tomato, $alpha: 0.5);
+    .inner-box-wrapper {
+      @include flex(row);
+      @include productItem;
+    }
+  }
+}

@@ -24,3 +24,178 @@
     color: white;
   }
 }
+
+@mixin headAndDes {
+  h2 {
+    color: $darkClr2;
+    font-size: 22px;
+  }
+  p {
+    font-size: 14px;
+    color: $darkClr;
+    opacity: 0.6;
+  }
+}
+
+@mixin productItem {
+  .box {
+    width: 211px;
+    height: 320px;
+    @include flex(column-reverse);
+    .img-box {
+      height: 65%;
+      width: 100%;
+      position: relative;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        box-shadow: -10px 0px 20px rgb(231, 231, 231);
+      }
+      &::before {
+        content: "-17%";
+        position: absolute;
+        display: block;
+        top: 4%;
+        left: 4%;
+        padding: 2px;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 12px;
+        border-radius: 3px;
+        color: white;
+        background: rgba($color: $tomato, $alpha: 0.9);
+        opacity: 0.9;
+      }
+      .layer {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          .quick-view {
+            transform: translateY(0%);
+            opacity: 1;
+          }
+          i {
+            opacity: 1;
+          }
+        }
+        i {
+          position: absolute;
+          @include flex(row);
+          align-items: center;
+          justify-content: center;
+          top: 4%;
+          right: 4%;
+          padding: 6px;
+          border-radius: 50%;
+          border: 1px solid rgba($color: $darkClr, $alpha: 0.5);
+          opacity: 0;
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            background: $brandClr;
+            border: transparent;
+            .add {
+              color: white;
+            }
+          }
+          .add {
+            font-size: 17px;
+            color: $darkClr2;
+          }
+        }
+        .quick-view {
+          position: absolute;
+          width: 100%;
+          padding: 16px;
+          @include flex(row);
+          align-items: center;
+          justify-content: center;
+          transform: translateY(100%);
+          transition: all 0.2s ease-in-out;
+          bottom: 0;
+          background: rgba($color: $brandClr, $alpha: 0.9);
+          opacity: 0;
+          p {
+            color: white;
+            text-transform: uppercase;
+            opacity: 1;
+          }
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .txt-box {
+      width: 100%;
+      height: 45%;
+      @include flex(column);
+      &:hover ~ .img-box {
+        box-shadow: -10px 0px 20px rgb(231, 231, 231);
+        .layer {
+          .quick-view {
+            opacity: 1;
+            transform: translateY(0%);
+          }
+          i {
+            opacity: 1;
+          }
+        }
+      }
+      .txt-box1 {
+        width: 100%;
+        @include flex(row);
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        padding-bottom: 0px;
+        h6 {
+          font-weight: 200;
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+        svg {
+          font-size: 18px;
+          cursor: pointer;
+        }
+        .loved {
+          color: $tomato;
+        }
+      }
+      .txt-box2 {
+        padding: 0px 0px 0px 8px;
+        p {
+          font-size: 15px;
+          color: $darkClr2;
+          opacity: 1;
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            color: $brandClr;
+          }
+        }
+        svg {
+          color: $darkClr;
+          opacity: 0.4;
+        }
+      }
+      .txt-box3 {
+        padding: 0px 0px 0px 8px;
+        strike {
+          font-size: 13px;
+          opacity: 0.4;
+        }
+        span {
+          padding-left: 3px;
+        }
+      }
+    }
+  }
+}

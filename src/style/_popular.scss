@@ -1,22 +1,14 @@
 .popular {
   padding: 25px;
   padding-top: 34px;
-  h2 {
-    color: $darkClr2;
-    font-size: 22px;
-  }
-  p {
-    font-size: 14px;
-    color: $darkClr;
-    opacity: 0.6;
-  }
+  @include headAndDes;
   .popular-boxes {
     padding-top: 40px;
     @include flex(row);
     align-items: center;
     justify-content: space-between;
     .box {
-      width: 300px;
+      width: 310px;
       height: 190px;
       position: relative;
       padding: 20px;

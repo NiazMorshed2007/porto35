@@ -1,5 +1,5 @@
 import React from "react";
-import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
+import Buttons from "../Buttons";
 
 function Banner() {
   return (
@@ -17,12 +17,7 @@ function Banner() {
         <h3 className="up-to">UP TO</h3>
         <h2>50%</h2>
       </div>
-      <div className="btn-right">
-        <BsChevronRight />
-      </div>
-      <div className="btn-left">
-        <BsChevronLeft />
-      </div>
+      <Buttons />
     </div>
   );
 }

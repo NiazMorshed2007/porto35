@@ -3,7 +3,7 @@ import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
 import { AiFillStar } from "react-icons/ai";
 import { BiShoppingBag } from "react-icons/bi";
 
-function MostPopularBox(props) {
+function ProductBox(props) {
   const [fav, setFav] = useState(false);
   return (
     <div className="box">
@@ -42,4 +42,4 @@ function MostPopularBox(props) {
   );
 }
 
-export default MostPopularBox;
+export default ProductBox;
