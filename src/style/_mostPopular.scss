@@ -110,7 +110,7 @@
               right: 4%;
               padding: 6px;
               border-radius: 50%;
-              border: 1px solid $darkClr;
+              border: 1px solid rgba($color: $darkClr, $alpha: 0.5);
               opacity: 0;
               transition: all 0.2s ease-in-out;
               cursor: pointer;
