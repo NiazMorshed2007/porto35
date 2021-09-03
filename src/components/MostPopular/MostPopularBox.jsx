@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoIosHeartEmpty, IoIosHeart } from "react-icons/io";
 import { AiFillStar } from "react-icons/ai";
+import { BiShoppingBag } from "react-icons/bi";
 
 function MostPopularBox(props) {
   const [fav, setFav] = useState(false);
@@ -27,6 +28,14 @@ function MostPopularBox(props) {
         </div>
       </div>
       <div className="img-box">
+        <div className="layer">
+          <i>
+            <BiShoppingBag className="add" />
+          </i>
+          <div className="quick-view">
+            <p>quick view</p>
+          </div>
+        </div>
         <img src={props.img} alt="" />
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MostPopularBox from "./MostPopularBox";
+import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 
 function MostPopular() {
   const [category, setCategory] = useState(0);
@@ -43,11 +44,17 @@ function MostPopular() {
     <div className="most-popular">
       <h2>Most Popular</h2>
       <p>All our new arrivals in a exclusive brand selection</p>
+      <div className="btn-right">
+        <BsChevronRight />
+      </div>
+      <div className="btn-left">
+        <BsChevronLeft />
+      </div>
       <div className="box-wrapper">
         <div className="categories">
           {catArr.map((e, i) => (
             <div
-              className={category == i ? "category active" : "category"}
+              className={category === i ? "category active" : "category"}
               onClick={() => setCategory(i)}
               key={i}
             >
@@ -57,7 +64,7 @@ function MostPopular() {
         </div>
         <div className="inner-box-wrapper">
           {boxArr.map((e, i) => (
-            <MostPopularBox head={e.head} img={e.src} />
+            <MostPopularBox key={i} head={e.head} img={e.src} />
           ))}
         </div>
       </div>

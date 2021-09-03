@@ -1,0 +1,43 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  @include flex(row);
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 100;
+  transition: all 0.2s ease-in-out;
+  div {
+    width: 20px;
+    height: 20px;
+    background: silver;
+    border-radius: 50%;
+    margin: 5px;
+    animation: load 1.5s infinite;
+  }
+  .div1 {
+    animation-delay: -0.3s;
+  }
+  .div2 {
+    animation-delay: -0.15s;
+  }
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes load {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0px;
+    transform: scale(0);
+  }
+  40% {
+    box-shadow: 0px 0px 7px;
+    transform: scale(1);
+  }
+}
