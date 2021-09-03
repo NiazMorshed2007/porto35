@@ -8,10 +8,12 @@ function Ad() {
           src="https://www.portotheme.com/wordpress/porto/shop35/wp-content/uploads/sites/178/2020/07/banner-1.png"
           alt=""
         />
-        <p>Exclusive Product New Arrival</p>
-        <h2>Organic Coffee</h2>
-        <h4>SPECIAL BLEND</h4>
-        <span>Fresh!</span>
+        <div className="txt">
+          <p>Exclusive Product New Arrival</p>
+          <h2>Organic Coffee</h2>
+          <h4>SPECIAL BLEND</h4>
+          <span>Fresh!</span>
+        </div>
       </div>
       <div className="right">
         <img
