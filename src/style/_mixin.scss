@@ -97,6 +97,7 @@
           opacity: 0;
           transition: all 0.2s ease-in-out;
           cursor: pointer;
+          background: white;
           &:hover {
             background: $brandClr;
             border: transparent;

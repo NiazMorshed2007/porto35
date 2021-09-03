@@ -6,6 +6,7 @@ import OwlStage from "./components/OwlStage/OwlStage";
 import Popular from "./components/popular/Popular";
 import MostPopular from "./components/MostPopular/MostPopular";
 import WeekSpecial from "./components/weeksSpecial/WeekSpecial";
+import Ad from "./components/ad/Ad";
 import "./style/style.scss";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Popular />
       <MostPopular />
       <WeekSpecial />
+      <Ad />
     </div>
   );
 }
