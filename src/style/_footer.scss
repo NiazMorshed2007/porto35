@@ -5,4 +5,75 @@
   position: fixed;
   bottom: 0;
   z-index: -1;
+  @include flex(column);
+  .footer-1 {
+    width: 100%;
+    height: 75%;
+    padding: 30px;
+    @include flex(row);
+    padding-top: 40px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba($color: $darkClr, $alpha: 0.2);
+    h4 {
+      text-transform: uppercase;
+      font-size: 17px;
+      color: $darkClr2;
+      font-weight: 600;
+    }
+    ul {
+      padding-top: 12px;
+      list-style: none;
+      li {
+        margin: 12px;
+        margin-left: 0;
+        font-size: 14px;
+        color: rgba($color: $darkClr, $alpha: 0.5);
+        text-transform: capitalize;
+      }
+    }
+    .icons {
+      padding-top: 15px;
+      @include flex(row);
+      align-items: center;
+      gap: 1.2em;
+      i {
+        padding: 9px;
+        border-radius: 50%;
+        @include flex(row);
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba($color: $darkClr, $alpha: 0.5);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          border: transparent;
+        }
+      }
+      .insta:hover {
+        background-color: $brown;
+        color: white;
+      }
+      .twitter:hover {
+        color: white;
+        background-color: $twitterClr;
+      }
+      .fb:hover {
+        color: white;
+        background-color: $facebookClr;
+      }
+    }
+    p {
+      padding-top: 15px;
+      padding-bottom: 25px;
+      font-weight: 600;
+    }
+  }
+  .footer-2 {
+    p {
+      font-size: 14px;
+      padding-top: 10px;
+      text-align: center;
+      color: rgba($color: $darkClr2, $alpha: 0.8);
+    }
+  }
 }
