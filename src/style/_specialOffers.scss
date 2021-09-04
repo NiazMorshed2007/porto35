@@ -1,6 +1,7 @@
 .special-offers {
   padding: 25px;
   @include headAndDes;
+  background-color: $lightSilver;
   .box-wrapper {
     padding: 10px;
     @include flex(row);

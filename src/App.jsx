@@ -10,6 +10,8 @@ import Ad from "./components/ad/Ad";
 import SpecialOffers from "./components/specialOffers/SpecialOffers";
 import Brands from "./components/brands/Brands";
 import Recipes from "./components/recipes/Recipes";
+import Email from "./components/email/Email";
+import Footer from "./components/footer/Footer";
 import "./style/style.scss";
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
       <SpecialOffers />
       <Brands />
       <Recipes />
+      <Email />
+      <Footer />
     </div>
   );
 }

@@ -2,7 +2,7 @@
   padding: 25px;
   @include headAndDes;
   position: relative;
-
+  background: $lightSilver;
   .btn-left {
     @include btn;
     left: 0%;

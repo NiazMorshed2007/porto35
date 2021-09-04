@@ -2,6 +2,7 @@
   padding: 25px;
   @include headAndDes;
   position: relative;
+  background-color: $lightSilver;
   .btn-left {
     @include btn;
     transform: translateY(0%);
