@@ -7,6 +7,9 @@ import Popular from "./components/popular/Popular";
 import MostPopular from "./components/MostPopular/MostPopular";
 import WeekSpecial from "./components/weeksSpecial/WeekSpecial";
 import Ad from "./components/ad/Ad";
+import SpecialOffers from "./components/specialOffers/SpecialOffers";
+import Brands from "./components/brands/Brands";
+import Recipes from "./components/recipes/Recipes";
 import "./style/style.scss";
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
       <MostPopular />
       <WeekSpecial />
       <Ad />
+      <SpecialOffers />
+      <Brands />
+      <Recipes />
     </div>
   );
 }

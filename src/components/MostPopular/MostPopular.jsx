@@ -24,7 +24,7 @@ function MostPopular() {
       src: "https://www.portotheme.com/wordpress/porto/shop35/wp-content/uploads/sites/178/2020/07/496465.jpg",
     },
     {
-      head: "breakfast, cooking, frozen",
+      head: "breakfast, cooking",
       src: "https://www.portotheme.com/wordpress/porto/shop35/wp-content/uploads/sites/178/2020/07/481837.jpg",
     },
     {

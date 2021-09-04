@@ -1,0 +1,26 @@
+.brands {
+  padding: 25px;
+  @include headAndDes;
+  position: relative;
+  .btn-left {
+    @include btn;
+    transform: translateY(0%);
+    left: 0%;
+    border: 1px solid rgba($color: $darkClr, $alpha: 0.2);
+  }
+  .btn-right {
+    @include btn;
+    transform: translateY(0%);
+    right: 0%;
+    border: 1px solid rgba($color: $darkClr, $alpha: 0.2);
+  }
+  .box-wrap {
+    @include flex(row);
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    background: white;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+}
