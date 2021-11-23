@@ -13,7 +13,7 @@ function Banner() {
         <h1>Organic Coffee</h1>
         <h3>SPECIAL BLEND</h3>
         <h5>Fresh!</h5>
-        <p>BREAKFAST PRODUCT ON SALE</p>
+        <p>BREAKFAST PRODUCT ON SALE..</p>
         <h3 className="up-to">UP TO</h3>
         <h2>50%</h2>
       </div>
